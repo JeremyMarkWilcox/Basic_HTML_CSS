@@ -1,0 +1,19 @@
+table {
+    border: 3px solid rgb(145, 5, 5);
+}
+
+td:hover {
+    background-color: aqua;
+    color:black
+}
+
+tr, th {
+    background-color: brown;
+    color:rgb(228, 127, 12);
+}
+
+tr, td {
+    background-color: darkgreen;
+    color:rgb(41, 14, 141);
+}
+
