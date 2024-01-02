@@ -1,0 +1,17 @@
+p {
+    color: gold;
+    background-color: black;
+    font-weight: bolder;
+    text-align: justify;
+}
+
+h1 {
+    color: royalblue;
+    background-color: beige;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: large;
+    text-shadow: 2px 2px 4px #000000;
+  
+  
+}
