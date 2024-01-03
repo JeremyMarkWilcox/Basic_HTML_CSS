@@ -2,11 +2,11 @@ body {
     background-color: lightgreen;
 }
 
-
 nav {
     background-color: #333;
     overflow: hidden;
-    font-size: larger;
+    font-size: 25px;
+    font-weight: bold;
     position:fixed;
     width: 100%;
     top: 0;
@@ -27,16 +27,16 @@ nav a:hover {
     color: black;
 }
 
-#webpage_heading {
+.webpage_heading {
     color:#000000;
     font-size: 50px;
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#webpage_mini_heading {
+.webpage_mini_heading {
     color:#000000;
     font-size: 35px;
     text-align: center;
@@ -44,8 +44,7 @@ nav a:hover {
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-#webpage_paragraph {
+.webpage_paragraph {
     color:#333;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
@@ -65,7 +64,6 @@ nav a:hover {
     padding-bottom: 200px;
 }
 
-
 .video-container {
     width: 50%;
     margin: auto;
@@ -73,7 +71,6 @@ nav a:hover {
     padding-bottom: 200px;
     padding-right: 400px;
 }
-
 
 .video-container iframe {
     width: 1228; 
@@ -91,12 +88,10 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 label {
     display: block;
     margin-bottom: 8px;
 }
-
 
 input, textarea {
     width: 100%;
@@ -104,7 +99,6 @@ input, textarea {
     margin-bottom: 16px;
     box-sizing: border-box;
 }
-
 
 button {
     background-color: #007BFF;
