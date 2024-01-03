@@ -154,4 +154,5 @@ section {
     padding-top: 350px; /* This is spacer before the Main title Logo */
     padding-bottom: 500px; /* This is spacer after the Main title Logo */
     color: #fff;
+    text-align: center;
 }

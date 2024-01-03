@@ -2,6 +2,10 @@ body {
     background-color: lightgreen;
 }
 
+#spacing_200px {
+    padding-top: 200px;
+}
+
 nav {
     background-color: #333;
     overflow: hidden;
@@ -53,15 +57,12 @@ nav a:hover {
     padding-right: 80px;
 }
 
-.image-container {
-    text-align: center;
-}
-
 .image-container img {
     display: block;
     margin: auto;
     padding-top: 100px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
 .video-container {
