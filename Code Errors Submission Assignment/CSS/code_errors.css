@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+h3 {
+    text-align: center;
+}
+
+.image-with-border {
+    border: dashed 2px red; 
+}
