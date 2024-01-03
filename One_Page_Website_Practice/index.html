@@ -4,107 +4,108 @@
         <title>Coding is fun!</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" type = "text/css" href = "one_page_website_CSS.css">
+        <link rel = "stylesheet" type = "text/css" href = "CSS/one_page_website_CSS.css">
     </head>
     <body>
     <main>
         
-    <!--Navigation Section-->
-   <div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#javascript">Java Script</a>
-            <a href="#C++">C++</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
-    <!--Home Page Section-->
-        <section id="home">
-            <div id="spacing_200px"></div>           
-            <h1 class="webpage_heading">Coding is fun!</h1>
-    
-         <p class="webpage_paragraph">Welcome to Coding is Fun! Here, I share insights gained through my studies about various programming languages. Join me as I delve into the fascinating world of coding, exploring what I've learned and unraveling the intricacies of different programming languages.</p>
-        </section>
-    
-        <div class="video-container">
+        <!--Navigation Section-->
+        <div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#javascript">Java Script</a>
+                <a href="#C++">C++</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <!--Home Page Section-->
+            <section id="home">
+                <div id="spacing_200px"></div> 
+                
+                <div class="image-container">
+                    <img src="Images/CS.png" alt="displays the words 'Computer Science'" width="600" height="600">
+                </div>
 
-            <iframe width="1228" height="691" src="https://www.youtube.com/embed/bJzb-RuUcMU" title="How To Learn Programming for BEGINNERS! (2022/2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h1 class="webpage_heading">Coding is fun!</h1>
+        
+                <p class="webpage_paragraph">Welcome to Coding is Fun! Here, I share insights gained through my studies about various programming languages. Join me as I delve into the fascinating world of coding, exploring what I've learned and unraveling the intricacies of different programming languages.</p>
+            </section>
+        
+                <div class="video-container">
+
+                <iframe src="https://www.youtube.com/embed/bJzb-RuUcMU" title="How To Learn Programming for BEGINNERS! (2022/2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                </div>
+        
+                <div>
+                    <h1 class="webpage_heading">The PC</h1>
+                    <div class="image-container">
+                        <img src="Images/computer_image.png" alt="Picture of PC">
+                    </div>
+                    <p class="webpage_paragraph">Welcome to the expansive realm of Computer Science, where innovation meets logic, and possibilities are limited only by imagination. In this dynamic field, we navigate the ever-evolving landscape of technology, from the fundamentals of algorithms to the frontiers of artificial intelligence. Join me on a journey through the multifaceted world of Computer Science, where we unravel the mysteries of computation, explore groundbreaking advancements, and embrace the transformative power of code. Together, we'll embark on a quest to understand the essence of computation and its profound impact on our digital age, fostering a holistic appreciation for the science that drives our interconnected, technology-driven world.</p>                
+                </div>
             
-            </div>
-    
-    <div>
-        <h1 class="webpage_heading">Computer Science</h1>
-        <p class="webpage_paragraph">Welcome to the expansive realm of Computer Science, where innovation meets logic, and possibilities are limited only by imagination. In this dynamic field, we navigate the ever-evolving landscape of technology, from the fundamentals of algorithms to the frontiers of artificial intelligence. Join me on a journey through the multifaceted world of Computer Science, where we unravel the mysteries of computation, explore groundbreaking advancements, and embrace the transformative power of code. Together, we'll embark on a quest to understand the essence of computation and its profound impact on our digital age, fostering a holistic appreciation for the science that drives our interconnected, technology-driven world.</p>
-            <div class="image-container">
-                <img src="Images\computer_image.png" alt="Picture of PC">
-            </div>
-    </div>
+            <section id="javascript">
+                <h1 class="webpage_heading">Java Script</h1>
+                <div class="image-container">
+                    <img src="Images/Unofficial_JavaScript_logo_2.svg.png" alt="Picture of Java Script Icon" width="600" height="600">
+                </div>
 
-   
+                <p class="webpage_paragraph">JavaScript is a high-level, versatile programming language that is primarily known for its role in building dynamic and interactive web pages. It was created by Netscape and first appeared in Netscape Navigator 2.0 in 1995. JavaScript is now widely supported in web browsers and is an essential part of web development. </p>
+                
+                <h1 class="webpage_heading">Example of JS Code:</h1>
+
+                <div class="image-container">
+                    <img src="Images/javascript_code.png" alt="Picture of Java Script code" width="600" height="600">
+                </div>
+            </section>
+
+        <section id="C++">
+                <h1 class="webpage_heading">C++</h1>
+                <p class="webpage_paragraph">
+
+                <div class="image-container">
+                    <img src="Images/C++_Logo.png" alt="Picture of Java Script Icon" width="600" height="600">
+                </div>
+
+                    <p class="webpage_paragraph"> C++ is a powerful, general-purpose programming language that builds upon the foundations of the C programming language. It was developed by Bjarne Stroustrup at Bell Labs in the early 1980s. C++ is widely used in various application domains, including system/software development, game development, embedded systems, and more. Here are some key basics of C++ programming:</p>
+                <div class="image-container">
+                    <img src="Images/C++_Basic_Code.png" alt="Picture of Java Script code" width="600" height="600">
+                </div>
+            </section>
+
+
+            <!--Contact Section-->
+            <section id="contact">
+                <h1 class="webpage_heading">Contact</h1>
+                <h1 class="webpage_mini_heading">Please fill out this forum!</h1>
         
-   
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+            
+                    <button type="submit">Submit</button>
+                </form>
 
+            </section>
 
-    <section id="javascript">
-        <h1 class="webpage_heading">Java Script</h1>
-        <div class="image-container">
-            <img src="Images\Unofficial_JavaScript_logo_2.svg.png" alt="Picture of Java Script Icon" width="600" height="600">
-        </div>
+            </main>
 
-        <p class="webpage_paragraph">JavaScript is a high-level, versatile programming language that is primarily known for its role in building dynamic and interactive web pages. It was created by Netscape and first appeared in Netscape Navigator 2.0 in 1995. JavaScript is now widely supported in web browsers and is an essential part of web development. </p>
-        
-        <h1 class="webpage_heading">Example of JS Code:</h1>
+            
 
-        <div class="image-container">
-            <img src="Images\javascript_code.png" alt="Picture of Java Script code" width="600" height="600">
-        </div>
-    </section>
-
-    <section id="C++">
-        <h1 class="webpage_heading">C++</h1>
-        <p class="webpage_paragraph">
-
-            <div class="image-container">
-                <img src="Images\C++_Logo.png" alt="Picture of Java Script Icon" width="600" height="600">
-            </div>
-
-           <p class="webpage_paragraph"> C++ is a powerful, general-purpose programming language that builds upon the foundations of the C programming language. It was developed by Bjarne Stroustrup at Bell Labs in the early 1980s. C++ is widely used in various application domains, including system/software development, game development, embedded systems, and more. Here are some key basics of C++ programming:</p>
-        <div class="image-container">
-            <img src="Images\C++_Basic_Code.png" alt="Picture of Java Script code" width="600" height="600">
-        </div>
-        </section>
-
-
-    <!--Contact Section-->
-    <section id="contact">
-        <h1 class="webpage_heading">Contact</h1>
-        <h1 class="webpage_mini_heading">Please fill out this forum!</h1>
-       
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-    
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-    
-            <button type="submit">Submit</button>
-        </form>
-
-    
-    </section>
-
-    </main>
-
-    <!--Footer Section-->
-    <footer>
-        <p>&copy; 2023 Coding is Fun. All rights reserved.</p>
-    </footer>
+            <!--Footer Section-->
+            <footer>  
+                <p>&copy; 2023 Coding is Fun. All rights reserved.</p>
+            </footer>
                 
         </body>
 </html>
