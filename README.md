@@ -14,8 +14,7 @@ This page has my personalized portfolio information on it. I spent some time pla
 ## Space Station Site
 This page page was a training exercise that uses CSS to create a navar, imagine containers, and dropdowns. As you could probably guess by the title is it space themed.
 
-
 ## BootStrap Project
-
+In this project I used the BootStrap 4 framework and created a movie theater themed webpage with bootstrap components such as navbar, jumbotron, form, cards, and dropdowns.
 
 ## Shinto Slash Website
