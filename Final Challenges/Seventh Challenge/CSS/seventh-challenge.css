@@ -1,0 +1,10 @@
+p {
+    color: #333;
+    font-size: 50px;
+    font-weight: bolder;
+    transition: color 0.3s; /* Smooth transition for the hover effect */
+  }
+
+  p:hover {
+    color: #ff6600; /* Change text color on hover */
+  }

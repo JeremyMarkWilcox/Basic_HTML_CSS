@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-style: groove;
+    border-width: 0.2em;
+    border-color: #ffd700;
+  }
+
+  footer:hover {
+    color: #ffd700; 
+  }

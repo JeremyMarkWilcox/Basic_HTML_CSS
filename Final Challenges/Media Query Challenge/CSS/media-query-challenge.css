@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    color: black; 
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    p {
+        color: blue; 
+    }
+}
