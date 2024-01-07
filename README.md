@@ -12,6 +12,7 @@ This is a display of sample websites that I made using HTML and CSS.
 This page has my personalized portfolio information on it. I spent some time playing with HTML and CSS to make it look unique but not overwhelming. I look forward to enhancing it further with JavaScript soon!
 
 ## Space Station Site
+This page page was a training exercise that uses CSS to create a navar, imagine containers, and dropdowns. As you could probably guess by the title is it space themed.
 
 
 ## BootStrap Project
