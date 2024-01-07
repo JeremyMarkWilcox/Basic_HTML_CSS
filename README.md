@@ -8,13 +8,13 @@ This is a display of sample websites that I made using HTML and CSS.
 - [Boot_Strap4_project](Boot_Strap4_project)
 - [Shinto_Slash_Website](Shinto_Slash_Website) (I have more work to do on this!)
 
-##Portfolio
+## Portfolio
 
 
-##Space Station Site
+# #Space Station Site
 
 
-##BootStrap Project
+## BootStrap Project
 
 
-##Shinto Slash Website
+## Shinto Slash Website
