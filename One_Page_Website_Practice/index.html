@@ -4,6 +4,7 @@
         <title>Coding is fun!</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="JS\one_page_website.js"></script>
         <link rel = "stylesheet" type = "text/css" href = "CSS/one_page_website_CSS.css">
     </head>
     <body>
@@ -18,34 +19,122 @@
                 <a href="#contact">Contact</a>
             </nav>
         </div>
-        <!--Home Page Section-->
-            <section id="home">
-                <div id="spacing_200px"></div> 
-                
-                <div class="outer">
-                    <div class="image-container">
-                        <img src="Images/CS.png" alt="displays the words 'Computer Science'" width="600" height="600">
-                    </div>
-                </div>
+        <!--Home Page 1st Slide Section-->
+        <section id="home">
+             <div class="spacing_200px"></div> 
+            
+             <div class="outer">                   
+                   <div class="image-container">
+                      <img src="Images/CS.png" onclick="openModal_1();currentSlide(2)" class="hover-shadow" 
+                     alt="displays the words 'Computer Science'" width="600" height="600">
+                   </div>
+             </div>
+
+            <!-- The Modal/Lightbox -->
+             <div id="myModal_1" class="modal">
+                <span class="close cursor" onclick="closeModal_1()">&times;</span>
+            <div class="modal-content">
+        
+            <div class="mySlides_1">
+                <div class="numbertext">1 / 2</div>
+                <img src="Images/CS_WIDE.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides_1">
+                <div class="numbertext">2 / 2</div>
+                <img src="Images/CS_2.png" style="width:100%">
+            </div>
+
+                    <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption_1"></p>
+            </div>
+
+                    <!-- Thumbnail image controls -->
+            <div class="spacing_30px"></div> 
+
+            <div class="column">
+                <img class="demo" src="Images/CS.png" onclick="currentSlide(1)" alt="Computer Science is a broard term">
+            </div>
+        
+            <div class="column">
+                <img class="demo" src="Images/CS_2.png" onclick="currentSlide(2)" alt="Typing is vital!">
+            </div>
+        </section>
                 
                 <h1 class="webpage_heading">Coding is fun!</h1>
         
                 <p class="webpage_paragraph">Welcome to Coding is Fun! Here, I share insights gained through my studies about various programming languages. Join me as I delve into the fascinating world of coding, exploring what I've learned and unraveling the intricacies of different programming languages.</p>
-            </section>
-        
-                <div class="video-container">
+           
+                <div class="spacing_200px"></div> 
+                <div class="videoContainer">
 
-                <iframe src="https://www.youtube.com/embed/bJzb-RuUcMU" title="How To Learn Programming for BEGINNERS! (2022/2023)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
+                <iframe src="https://www.youtube.com/embed/bJzb-RuUcMU" title="How To Learn Programming for BEGINNERS! (2022/2023)" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
+
+
+
         
+            <!--The PC Section 2nd Slide-->
+        <section>
+            <div>
+                <h1 class="webpage_heading">The PC</h1>
+                <div class="image-container">
+                    <img src="Images/computer_image.png" alt="Picture of PC" onclick="openModal_2();currentSlide(2)" class="hover-shadow" >
+                </div>
                 <div>
-                    <h1 class="webpage_heading">The PC</h1>
-                    <div class="image-container">
-                        <img src="Images/computer_image.png" alt="Picture of PC">
-                    </div>
                     <p class="webpage_paragraph">Welcome to the expansive realm of Computer Science, where innovation meets logic, and possibilities are limited only by imagination. In this dynamic field, we navigate the ever-evolving landscape of technology, from the fundamentals of algorithms to the frontiers of artificial intelligence. Join me on a journey through the multifaceted world of Computer Science, where we unravel the mysteries of computation, explore groundbreaking advancements, and embrace the transformative power of code. Together, we'll embark on a quest to understand the essence of computation and its profound impact on our digital age, fostering a holistic appreciation for the science that drives our interconnected, technology-driven world.</p>                
                 </div>
+
+
+                 <!-- The Modal/Lightbox -->
+            <div id="myModal_2" class="modal">
+                <span class="close cursor" onclick="closeModal_2()">&times;</span>
+            <div class="modal-content">
+            
+            <div class="mySlides_2">
+                <div class="numbertext_2">1 / 2</div>
+                <img src="Images/computer_imageWIDE.png" style="width:60%">
+             </div>
+            
+             <div class="mySlides_2">
+                 <div class="numbertext_2">2 / 2</div>
+                <img src="Images/computer_image2.png" style="width:100%">
+            </div>
+
+                <!-- Next/previous controls -->
+             <a class="prev" onclick="plusSlides_2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides_2(1)">&#10095;</a>
+
+             <!-- Caption text -->
+            <div class="caption-container">
+                 <p id="caption_2"></p>
+            </div>
+
+                 <!-- Thumbnail image controls -->
+            <div class="spacing_30px"></div> 
+            <div class="column">
+                <img class="demo_2" src="Images/computer_imageWIDE.png" onclick="currentSlide_2(1)" alt="A Basic Tower">
+            </div>
+        
+            <div class="column">
+                <img class="demo_2" src="Images/computer_image2.png" onclick="currentSlide_2(2)" alt="A Nice Setup!">
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
             
             <section id="javascript">
                 <h1 class="webpage_heading">Java Script</h1>
