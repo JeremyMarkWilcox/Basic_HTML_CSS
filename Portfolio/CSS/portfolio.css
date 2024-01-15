@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
 }
@@ -177,7 +181,7 @@ img:hover {
 
 
 footer {
-    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    padding: .5%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
     background-color: rgb(13, 12, 12);
     font-weight: bolder;
     color: green;
@@ -286,7 +290,7 @@ footer {
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 600px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 1000px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: lightgreen; /* Sets the background color of the columns with class Column_1 */
     border-color: green;
     border-style:dashed;
@@ -305,7 +309,7 @@ footer {
     width: 50%;
     padding: 10px;
     padding-top: 1.9%;
-    height: 600px;
+    height: 1000px;
     background-color: black;
     border-color: gray;
     border-style: ridge;
@@ -318,7 +322,7 @@ footer {
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
 .Column_tall {
     padding-top: 3.5%;
-    height: 600px;
+    height: 1000px;
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
@@ -331,7 +335,7 @@ footer {
 
 /***** CONTACT FORM STYLING *****/
 /* input[type=text] targets all text input sections of the contact form */
-input[type=text] {
+input[type=text], input[type=tel], input[type=email], textarea {
     width: 100%; /* Each input box covers the full width of the container */
     padding: 12px; /* Adds padding within the text box */
     border: 2px solid #ccc; /* Setting a solid border and its color */
@@ -373,12 +377,83 @@ input[type=submit]:hover {
     transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
 }
 
-form {
+form{
     border-radius: 25px; /* Rounds the corners of the contact form */
     border-style: ridge;
     border-width: 20px;
     border-color: teal;
     background-color: lightblue; 
     padding: 10px; /* Adds padding to the contact form */
-    font-family: "Trebuchet MS", Optima;
+    font-family: "Trebuchet MS", Optima;    
 }
+
+.contact_button {
+    border-radius: 25px; /* Rounds the corners of the contact form */
+    border-style: ridge;
+    border-width: 20px;
+    border-color: teal;
+    background-color: lightblue; 
+    padding: 10px; /* Adds padding to the contact form */
+    margin-left: 200px;
+    margin-right: 200px;  
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.contact_button_text {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: teal;
+    cursor: pointer;
+    display: inline-block;
+    text-shadow: 2px, 2px, 2px, 2px #007bff;
+    margin: 50px;
+}
+
+.contact_button:hover .contact_button_text {
+    color:#00004d
+}
+
+#contactImage {
+    margin-top: 100px;
+}
+
+.fade-in {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Use the fadeIn animation */
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+
+.link-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .link-container:hover::before {
+    content: attr(data-preview);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+

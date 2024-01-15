@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html>
-    
+<html>   
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
+        <meta property="og:url" content="http://jeremy-wilcox.com">
+        <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
         <title>Jeremy M Wilcox</title>
         <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
+        <script src="./JS/portfolio.js"></script>
     </head>
-
-    
-    <body class="Background">
-        
-        
+    <body class="Background">       
         <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#Credentials">Credentials</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Background">Background</a>
-            <a href="#Contact">Contact</a>
+            <a class="active" style="font-size:1.5vw;" href="#Home">Home</a>
+            <a href="#Credentials" style="font-size:1.5vw;">Credentials</a>
+            <a href="#GitHub" style="font-size:1.5vw;">GitHub</a>
+            <a href="#Background" style="font-size:1.5vw;">Background</a>
+            <a href="#Contact" style="font-size:1.5vw;">Contact</a>
         </div>
  <!-- Moving the Home id up here brings the view to the very top of the browser which is much nicer looking! --> 
-        <div id="Home"></div>
-
-       
-        <br>
-        <br>
-
-        
+        <div id="Home"></div>  <br><br>       
         <div>
-            <video autoplay muted loop id="Typing_Video">
+            <video autoplay muted loop id="Typing_Video" class="fade-in">
                 <source src="images/pexels-mikhail-nilov-7534239 (Original).mp4" type="video/mp4">
                 <!--Display message if video fails to run-->
                 Your browser does not support HTML5 video.
+
             </video>
         </div>
-
        
         <div class="Video_Text">
-            <h1 class="white-text">Jeremy's Portfolio</h1>
+            <h1 class="white-text" style="font-size:4vw;">Jeremy's Portfolio</h1>
             <strong>
                 <p class="center">
-                    <q>Quality is not an act, it is a habit.</q>
+                    <q style="font-size:2vw;">Quality is not an act, it is a habit.</q>
                     <br> -Aristotle</p>
                     <br>
-                    <br> <p class="welcome">Welcome to my portfolio website. My name is Jeremy Wilcox. Here you can evaluate my experience and learn about my background.
+                    <br> <p class="welcome" style="font-size:2vw;">Welcome to my portfolio website. My name is Jeremy Wilcox. 
+                        Here you can evaluate my experience and learn about my background. 
                     <br>
                     <br> Thank you very much for your time!</p>                 
             </strong>
@@ -55,18 +49,22 @@
                 <div class="image-container">
                     <img src="images/pc-with-code.png" alt="Laptop with text" class="pc-pic">
                     <div class="text-overlay">
-                        <p class="welcome">Fervent passion for the art of coding!</p>
+                        <p class="welcome" style="font-size:2vw;">Fervent passion for the art of coding!</p>
                     </div>
                 </div>
             </div>            
           
             <div class="Column_1">
-                <h1>Credentials</h1>
-                <p>
-                    I am a trained software developer who absolutely loves to code and problem solve! I have experience in Game Developement as well as Full-Stack. I know I have the drive to turn your project into a reality! 
+                <h1 style="font-size:4vw;">Credentials</h1>
+                <p style="font-size:2vw;">
+                    I am a trained software developer who absolutely loves to code and problem solve! I have experience in Game Developement
+                     as well as Full-Stack. I know I have the drive to turn your project into a reality! 
                     <br>
-                    <span  id="GitHub"></span><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Game Developer Boot Camp, trained and experienced in the following web and programming languages: C++, C#, HTML, CSS, JavaScript, SQL and more.</p>
-                    <br><h3>My GitHub Link:</h3> <p class="center"><a href="https://github.com/JeremyMarkWilcox" target="_blank">Jeremy's Github</a>
+                    <span  id="GitHub"></span><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
+                    Game Developer Boot Camp, trained and experienced in the following web and programming languages: C++, C#, HTML, CSS, JavaScript,
+                     SQL and more.</p>
+                    <br><h3>My GitHub Link:</h3> <p style="font-size:2vw;"
+                     class="center"><a href="https://github.com/JeremyMarkWilcox" target="_blank">Jeremy's Github</a>
                     <br>                 
                     <br>
                     <a href="#Contact">Contact</a> me below!
@@ -76,10 +74,9 @@
 
         
         <div class="Row" id="Background">
-          
             <div class="Column_1">
-                <h1>BackGround</h1>
-                <p>
+                <h1 style="font-size:4vw;">BackGround</h1>
+                <p style="font-size:2vw;">
                     In the Spring of 2010, I earned a Bachelor's Degree in Public Justice. Following that, I worked at my local highway department for 14 years, until recently realizing I wanted more out of life and had the necessary intellect and willpower to see my dream come to fruition. 
                     <br>
                     <br>
@@ -87,19 +84,19 @@
                     <br>
                     <br>
                     After prioritizing work and family I enjoy climbing and removing trees, and writing my illustrated novel series available on Amazon called: <a href="https://www.amazon.com/Shinto-Slash-Parade-Jericho-Black/dp/1737646013" target="_blank">Shinto Slash: The Parade of Demons</a>
-               </p>
+                </p>
             </div>
-           
-          
-
-        <div class="Column_2">
-            <div class="image-container">
-                <img  src="images/C++.png" alt="C++ Logo" class="cpp">
-                <div>
-                    <p class="welcome">Experienced in C++!</p>
+            
+            <div class="Column_2">
+                <div class="image-container">
+                    <img  src="images/C++.png" alt="C++ Logo" class="cpp">
+                    <div>
+                        <p style="font-size:2vw;" class="welcome">Experienced in C++!</p>
+                    </div>
                 </div>
             </div>
-        </div>  
+        </div>
+        
 
         
         <div class="Row" id="Contact">
@@ -110,31 +107,52 @@
                 <div class="image-container">
                     <img  src="images/gaming.png" alt="gaming image" class="gaming-pic">
                     <div>
-                        <p class="welcome">Dedicated to detail!</p>
+                        <p style="font-size:2vw;" class="welcome">Dedicated to detail!</p>
                     </div>
                 </div>
             </div>  
          
             <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <span class="contactheadings">
-                <form action="https://formspree.io/f/mgegerpp" method="POST"> 
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                    </span>
-                </form>
+
+                <div id="headingForm">
+                    <h1 style="font-size:4vw;">Contact</h1>
+                </div>
+               
+                <div class="contact_button" id="contactButton">                   
+                    <button style="font-size:2.5vw;" onclick="openContactForm()"><h6 class="contact_button_text">Click Here to Access<br>My Contact Form</h6></button>
+                </div>
+                <div id="contactForm" style="display: none;">
+                    <h1 style="font-size:4vw;">Contact</h1>
+                    <span class="contactheadings">
+                       
+                        <form action="https://formspree.io/f/mgegerpp" method="POST"> 
+                            <label>Name:</label>
+                            <input type="text" name="Name" placeholder="Please enter your name here" required>
+                            
+                            <label>Email:</label>
+                            <input type="email" id="Email" name="Email" placeholder="Please enter your email here" required>
+                            
+                            <label>Message:</label>
+                            <textarea id="Message" name="Message" placeholder="Please write your message here" required></textarea>
+                            
+                            <label>Phone Number:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                            
+                            <input type="submit" value="SUBMIT">
+                        </form>
+                    </span>                    
+                </div>
+                <div id="contactImage">
+                    <img src="images/contact_me.png" alt="says contact me">
+                </div>
             </div>
-        </div>
+            
+            
 
         
         <footer>
             <p>
-                <p class="center">&copy 2024 Jeremy M Wilcox | <a href="https://github.com/JeremyMarkWilcox" target="_blank">My GitHub</a></p>
+                <p style="font-size:2vw;" class="center">&copy 2024 Jeremy M Wilcox | <a href="https://github.com/JeremyMarkWilcox" target="_blank">My GitHub</a></p>
                 <br>
             </p>
         </footer>
