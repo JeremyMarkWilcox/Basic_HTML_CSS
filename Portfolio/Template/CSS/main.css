@@ -1,6 +1,6 @@
 /***** GENERAL STYLING *****/
 
-/*Affects entire document */
+/*Affects entire */
 html {
     scroll-behavior: smooth; /*This ensures that the page scrolling is smooth when the buttons on the nav bar is clicked */
 }
