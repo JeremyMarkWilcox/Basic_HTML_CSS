@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>   
+<html lang="en">   
+
+    <!--head-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
@@ -8,109 +10,153 @@
         <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
         <title>Jeremy M Wilcox</title>
         <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
-        <script src="./JS/portfolio.js"></script>
+        <script defer src="./JS/portfolio.js"></script>
     </head>
-    <body class="Background">       
+    <!--Body-->
+    <body class="Background"> 
+        
+        <!-- Navbar -->
         <div class="Navbar">
-            <a class="active" style="font-size:1.5vw;" href="#Home">Home</a>
-            <a href="#Credentials" style="font-size:1.5vw;">Credentials</a>
-            <a href="#GitHub" style="font-size:1.5vw;">GitHub</a>
-            <a href="#Background" style="font-size:1.5vw;">Background</a>
-            <a href="#Contact" style="font-size:1.5vw;">Contact</a>
+            <a class="active"  href="#Home">Home</a>
+            <a href="#Credentials">Credentials</a>
+            <a href="#GitHub">About/ GitHub</a>
+            <a href="#Background">Background</a>
+            <a href="#Contact">Contact</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
- <!-- Moving the Home id up here brings the view to the very top of the browser which is much nicer looking! --> 
-        <div id="Home"></div>  <br><br>       
-        <div>
+
+        <!--Background Video-->
+        <div id="Home">
             <video autoplay muted loop id="Typing_Video" class="fade-in">
                 <source src="images/pexels-mikhail-nilov-7534239 (Original).mp4" type="video/mp4">
                 <!--Display message if video fails to run-->
                 Your browser does not support HTML5 video.
-
             </video>
         </div>
        
+        <!-- Video text -->
         <div class="Video_Text">
-            <h1 class="white-text" style="font-size:4vw;">Jeremy's Portfolio</h1>
+            <h1 class="white-text">Jeremy's Portfolio</h1>
             <strong>
                 <p class="center">
-                    <q style="font-size:2vw;">Quality is not an act, it is a habit.</q>
-                    <br> -Aristotle</p>
+                    <q>Quality is not an act, it is a habit.</q>
+                    <br> -Aristotle<br>
                     <br>
-                    <br> <p class="welcome" style="font-size:2vw;">Welcome to my portfolio website. My name is Jeremy Wilcox. 
+                     Welcome to my portfolio website. My name is Jeremy Wilcox. 
                         Here you can evaluate my experience and learn about my background. 
                     <br>
-                    <br> Thank you very much for your time!</p>                 
+                    <br> Thank you very much for your time!
+                </p>                 
             </strong>
         </div>
-       
-        <div class="Row" id="Credentials">
-            
-            <div class="Column_2">
-                <div class="image-container">
-                    <img src="images/pc-with-code.png" alt="Laptop with text" class="pc-pic">
-                    <div class="text-overlay">
-                        <p class="welcome" style="font-size:2vw;">Fervent passion for the art of coding!</p>
+       <!--Credentials instead of slideshow-->
+        <div id="Credentials">
+            <div id="Credentials_Background"> 
+                <div id="Credentials_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/Personal Picture.png" alt="Picture of me">
+                        <div class="text">I am a trained software developer who absolutely loves to code and problem solve!</div>
                     </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/C++.png" alt="C++ logo">
+                        <div class="text">the popular programming language C++/ Unreal Engine,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images\C#.png" alt="C# logo">
+                        <div class="text">C#, Unity, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/The-Tech.png" alt="Replace with a picture of your choosing"> 
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Graduate of the Tech Academy's 
+                            Game Development Bootcamp!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-            </div>            
-          
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
+
+         <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="./images/pc-with-code.png" alt="Pc with code on the monitor">
+            </div>
+            <!-- Right column -->
             <div class="Column_1">
-                <h1 style="font-size:4vw;">Credentials</h1>
-                <p style="font-size:2vw;">
-                    I am a trained software developer who absolutely loves to code and problem solve! I have experience in Game Developement
-                     as well as Full-Stack. I know I have the drive to turn your project into a reality! 
+                <h1>About/ GitHub</h1>
+                <p>
+                    I find immense joy and fulfillment in coding, as it allows me to express creativity, solve problems, and innovate endlessly.<br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" 
+                    target="_blank">The Tech Academy</a>’s Game Developer Boot Camp, and trained 
+                    and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C++/ Unreal Engine, C#/ Unity and more. 
                     <br>
-                    <span  id="GitHub"></span><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
-                    Game Developer Boot Camp, trained and experienced in the following web and programming languages: C++, C#, HTML, CSS, JavaScript,
-                     SQL and more.</p>
-                    <br><h3>My GitHub Link:</h3> <p style="font-size:2vw;"
-                     class="center"><a href="https://github.com/JeremyMarkWilcox" target="_blank">Jeremy's Github</a>
-                    <br>                 
-                    <br>
-                    <a href="#Contact">Contact</a> me below!
+                    <br>"I am a game and full-stack developer eager to collaborate on your project, bringing my skills and passion to drive success.
+                    <br><h3>My GitHub Link:</h3> <p class="center"><a href="https://github.com/JeremyMarkWilcox" 
+                        target="_blank">Jeremy's Github</a>
+                    <a onclick="openForm()" class="contact">Contact</a> me below!
                 </p>
             </div>
         </div>
 
-        
+        <!--Background Section-->
         <div class="Row" id="Background">
+            <!--Left Column-->
             <div class="Column_1">
-                <h1 style="font-size:4vw;">BackGround</h1>
-                <p style="font-size:2vw;">
-                    In the Spring of 2010, I earned a Bachelor's Degree in Public Justice. Following that, I worked at my local highway department for 14 years, until recently realizing I wanted more out of life and had the necessary intellect and willpower to see my dream come to fruition. 
+                <h1>BackGround</h1>
+                <p>In the Spring of 2010, I earned a Bachelor's Degree in Public Justice. 
+                    Following that, I worked at my local highway department for 14 years, 
+                    until recently realizing I wanted more out of life and had the necessary intellect 
+                    and willpower to see my dream come to fruition. 
                     <br>
+                    I am married and father of three sons. The majority of my free time is spent with them, 
+                    a huge factor of this mid-life transition is to better take care of my family.
                     <br>
-                    I am married and father of three sons. The majority of my free time is spent with them, a huge factor of this mid-life transition is to better take care of my family.
-                    <br>
-                    <br>
-                    After prioritizing work and family I enjoy climbing and removing trees, and writing my illustrated novel series available on Amazon called: <a href="https://www.amazon.com/Shinto-Slash-Parade-Jericho-Black/dp/1737646013" target="_blank">Shinto Slash: The Parade of Demons</a>
+                    After prioritizing work and family I enjoy climbing and removing trees, 
+                    and writing my illustrated novel series available on Amazon called: 
+                    <a href="https://www.amazon.com/Shinto-Slash-Parade-Jericho-Black/dp/1737646013" 
+                    target="_blank">Shinto Slash: The Parade of Demons</a>
                 </p>
+             </div>
+             <!--LEFT OFF HERE-->   
+            <!--Right Column-->
+            <div class="Column_2">              
+                <img src="./images/gaming.png" alt="Someone Gaming">
             </div>
-            
-            <div class="Column_2">
-                <div class="image-container">
-                    <img  src="images/C++.png" alt="C++ Logo" class="cpp">
-                    <div>
-                        <p style="font-size:2vw;" class="welcome">Experienced in C++!</p>
-                    </div>
-                </div>
-            </div>
+                     
         </div>
-        
+                   
 
-        
         <div class="Row" id="Contact">
            
-           
-
-            <div class="Column_2">
-                <div class="image-container">
-                    <img  src="images/gaming.png" alt="gaming image" class="gaming-pic">
-                    <div>
-                        <p style="font-size:2vw;" class="welcome">Dedicated to detail!</p>
-                    </div>
-                </div>
-            </div>  
          
             <div class="Column_1 Column_tall">
 
