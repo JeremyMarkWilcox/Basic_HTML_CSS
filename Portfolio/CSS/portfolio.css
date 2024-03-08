@@ -317,6 +317,7 @@ footer {
     padding: 1.6%;
     height: 600px;
     background-color: rgb(123, 104, 79);
+    overflow: auto;
 }
 
 .Column_2 {
@@ -498,7 +499,6 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (max-width: 1080px) {
     .Navbar a{
-        width: 20%;
         font-size: 2.5vw;
     }
 }
